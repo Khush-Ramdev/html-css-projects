@@ -1,0 +1,101 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<html>
+
+<head>
+  <link REL="STYLESHEET" TYPE="text/css" HREF="style-survey.css">
+</head>
+
+<body>
+
+  <h1 id="title">are you a formula 1 fan ?</h1>
+  <main id="outerbox">
+    <p id="description">
+      This is small form to confirm that are you a formula one fan ot not.
+    </p>
+    <form id="survey-form">
+      <section id="text1">
+        <label id="name-label" for"name">Name:</label>
+        <input id="name" type="text" name="name" placeholder="enter your name " required>
+        <br />
+        <label id="email-label"or"email">E-mail:</label>
+        <input id="email" type="email" name="email" placeholder="example@exmaple.com" required>
+        <br />
+        <label id="number-label" for"number">Age:</label>
+        <input id="number" type="number" name="age" placeholder="enter your age " required min="1" max="99" value="15">
+        <br />
+      </section>
+      <fieldset id="text4">
+        <legend for="dropdown">How did you came to know about f1</legend>
+        <select id="dropdown" name="reason">
+          <option value="peers">peers</option>
+          <option value="magazine">magazines</option>
+          <option value="Televison">Televison</option>
+          <option value="Youtube ads">Youtube ads</option>
+          <option value="Instagram">Instagram</option>
+        </select>
+      </fieldset>
+      </div>
+      <fieldset id="text4">
+        <legend for="dropdown">favorite formula 1 team</legend>
+        <select id="dropdown" name="team-name">
+          <option value="Mercedes F1">Mercedes F1</option>
+          <option value="ferarri F1">ferarri F1</option>
+          <option value="aston martin red bull racing">aston martin red bull racing</option>
+          <option value="mclaren F1">mclaren F1</option>
+          <option value="reanult F1">reanult F1</option>
+          <option value="Haas F1">Haas F1</option>
+          <option value="Alpha tauri F1">Alpha tauri F1</option>
+          <option value="williams F1">williams F1</option>
+          <option value="racing point F1">racing point F1</option>
+          <option value="alfa romeo">alfa romeo</option>
+        </select>
+      </fieldset>
+      <br />
+      <fieldset id="text4">
+        <legend>
+          Favorite f1 era
+        </legend>
+        <input id="v12" type="radio" name="era" value="V12 era">
+        <label for="v12">V12 era</label>
+        <br />
+        <input id="name" type="radio" name="era" value="V10 era">
+        <label for="v10">V10 era</label>
+        <br />
+        <input id="name" type="radio" name="era" value="V8 era">
+        <label for="v8">V8 era</label>
+        <br />
+        <input id="v6" type="radio" name="era" value="V6 turbo hybrid era">
+        <label for="v6">V6 turbo hybrid era</label>
+      </fieldset>
+      <br />
+      <fieldset id="text4" class="center">
+        <legend>
+          best driver of all time
+        </legend>
+        <input id="driver1" type="checkbox" name="driver-name" value="michael schumacher" default>
+        <label for="driver1">michael schumacher</label>
+        <br />
+        <input id="driver2" type="checkbox" name="driver-name" value="aryton senna">
+        <label for="driver2">aryton senna</label>
+        <br />
+        <input id="driver3" type="checkbox" name="driver-name" value="lewis hamilton">
+        <label for="driver3">lewis hamilton</label>
+        <br />
+        <input id="driver4" type="checkbox" name="driver-name" value="jim clark">
+        <label for="driver4">jim clark</label>
+        <br />
+        <input id="driver5" type="checkbox" name="driver-name" value="alain prost">
+        <label for="driver5"> alain prost</label>
+        <br />
+        <input id="driver6" type="text" name="driver-name" placeholder="any other">
+        </br>
+      </fieldset>
+      <textarea name="message" row="5" cols="50">any other comments
+      </textarea>
+      <br />
+      <input id="submit" type="submit" value="submit">
+    </form>
+  </main>
+</body>
+
+</htmL>

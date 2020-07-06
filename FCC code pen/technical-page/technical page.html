@@ -1,0 +1,324 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style-technical.css">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <header id="header">
+            C Documentation
+        </header>
+        <div id="header1">
+            <a class="nav-link" href="#C_Keywords_and_Identifiers">C Keywords and Identifiers</a>
+        </div>
+        <div id="header1">
+            <a class="nav-link" href="#C_Variables,_Constants_and_Literals">C Variables, Constants and Literals</a>
+        </div>
+        <div id="header1">
+            <a  class="nav-link" href="#C_Data_Types">C Data Types</a>
+        </div>
+        <div id="header1">
+            <a class="nav-link" href="#C_Input_Output_(I/O)">C Input Output (I/O)</a>
+        </div>
+        <div id="header1">
+            <a class="nav-link" href="#C_Programming_Operators">C Programming Operators</a>
+        </div>
+        <div id="header1">
+            <a class="nav-link" href="#C_Arrays">C Arrays</a>
+        </div>
+    </nav>
+    <main id="main-doc">
+        <section id="C_Keywords_and_Identifiers" class="main-section">
+            <header class="head">
+                C Keywords and Identifiers
+            </header>
+            <h3>Keyword</h3>
+            <p>
+                Keywords are predefined, reserved words used in programming that have special meanings to the compiler.
+                Keywords are part of the syntax and they cannot be used as an identifier. For example:
+                <p id="code">
+                    <code>
+                    int money;
+                 </code>
+                </p>
+                <h3>Identifier</h3>
+                <p>
+                    Identifier refers to name given to entities such as variables, functions, structures etc.Identifiers
+                    must be unique. They are created to give a unique name to an entity to identify it during the
+                    execution of the program. For example int money; double accountBalance;
+                </p>
+                <ul>
+                    <lh>
+                        Rules for naming identifiers
+                    </lh>
+                    <li>A valid identifier can have letters (both uppercase and lowercase letters), digits and
+                        underscores.
+                    </li>
+                    <li>
+                        The first letter of an identifier should be either a letter or an underscore.
+                        You cannot use keywords as identifiers.
+                    </li>
+                    <li>
+                        There is no rule on how long an identifier can be. However, you may run into problems in some
+                        compilers if the identifier is longer than 31 characters.
+                    </li>
+                    <li>
+                        You can choose any name as an identifier if you follow the above rule, however, give meaningful
+                        names to identifiers that make sense
+                    </li>
+                </ul>
+                </div>
+        </section>
+
+        <section id="C_Variables,_Constants_and_Literals" class="main-section">
+            <header class="head">
+                C Variables, Constants and Literals
+            </header>
+            <div>
+                <h3>Variable</h3>
+                <p>
+                    In programming, a variable is a container (storage area) to hold data.To indicate the storage area,
+                    each variable should be given a unique name (identifier). Variable names are just the symbolic
+                    representation of a memory location. For example:
+                </p>
+                <p id="code">
+                    <code>
+                        int playerScore = 95;
+                    </code>
+                </p>
+                <p>
+                    Here, playerScore is a variable of int type. Here, the variable is assigned an integer value 95.
+                </p>
+                <ul>
+                    <lh>
+                        Rules for naming a variable
+                    </lh>
+                    <li>
+                        A variable name can only have letters (both uppercase and lowercase letters), digits and
+                        underscore.
+                    </li>
+                    <li>
+                        The first letter of a variable should be either a letter or an underscore.
+                    </li>
+                    <li>
+                        There is no rule on how long a variable name (identifier) can be. However, you may run into
+                        problems in some compilers if the variable name is longer than 31 characters.
+                    </li>
+                </ul>
+                <h3>Literals</h3>
+                <p>
+                    Literals are data used for representing fixed values. They can be used directly in the code. For
+                    example:
+                    1, 2.5, 'c' etc.
+                    Here, 1, 2.5 and 'c' are literals. Why? You cannot assign different values to these terms.
+                </p>
+                <h3>Constants</h3>
+                <p>
+                    If you want to define a variable whose value cannot be changed, you can use the const keyword. This
+                    will create a constant. For example,
+                </p>
+                <p>
+                    <code>
+                        const double PI = 3.14;
+                    </code>
+                </p>
+                <p>
+
+                    Notice, we have added keyword const.
+                    Here, PI is a symbolic constant; its value cannot be changed.
+                </p>
+            </div>
+        </section>
+
+        <section id="C_Data_Types" class="main-section">
+            <header class="head">
+                C Data Types
+            </header>
+
+            <div>
+                <h3>Integers</h3>
+                <p>
+                    Integers are whole numbers that can have both zero, positive and negative values but no decimal
+                    values. For example, 0, -5, 10
+                    We can use int for declaring an integer variable.
+                    <p id="code">
+                        <code>
+                        int id;
+                    </code>
+                    </p>
+                    <p>
+                        Here, id is a variable of type integer.
+                    </p>
+                    <h3>Float and Double</h3>
+                    <p>
+                        float and double are used to hold real numbers.
+                        float salary;
+                        double price;
+                        In C, floating-point numbers can also be represented in exponential. For example,float
+                    </p>
+                    <p>
+                        <code>
+                        normalizationFactor = 22.442e2;
+                    </code>
+
+                    </p>
+                    <p>
+                        What's the difference between float and double?
+                        The size of float (single precision float data type) is 4 bytes. And the size of double (double
+                        precision float data type) is 8 bytes.
+                    </p>
+                    <h3>Char</h3>
+                    <p>
+                        Keyword char is used for declaring character type variables. For example,
+                    </p>
+                    <p id="code">
+                        <code>
+                        char test = 'h';
+                    </code>
+                    </p>
+                    <p>
+                        The size of the character variable is 1 byte.
+                    </p>
+                    <h3>Void</h3>
+                    <p>
+                        void is an incomplete type. It means "nothing" or "no type". You can think of void as absent.
+                        For example, if a function is not returning anything, its return type should be void.Note that,
+                        you
+                        cannot create variables of void type.
+                    </p>
+            </div>
+        </section>
+
+        <section id="C_Input_Output_(I/O)" class="main-section">
+            <header class="head">
+                C Input Output (I/O)
+            </header>
+
+            <div>
+                <h3>C Output</h3>
+                <p>
+                    In C programming, printf() is one of the main output function. The function sends formatted output
+                    to the screen. For example,
+                </p>
+                <p id="code">
+                    <code>
+                        #include <stdio.h><br/>
+                            int main()<br/>
+                            {<br/> // Displays the string inside quotations<br/>
+                            printf("C Programming");<br/>
+                            return 0;<br/>
+                            }<br/>
+                 </code>
+                </p>
+                <p id="code">
+                    Output:<br />
+                    C Programming
+                </p>
+                <h3> C Input </h3>
+                <p>
+
+                    In C programming, scanf() is one of the commonly used function to take input from the user. The
+                    scanf() function reads formatted input from the standard input such as keyboards.
+                    Example 5: Integer Input/Output
+                </p>
+                <p id="code">
+                    #include <stdio.h><br />
+                        int main()<br />
+                        {<br />
+                        int testInteger;<br />
+                        printf("Enter an integer: ");<br />
+                        scanf("%d", &testInteger);<br />
+                        printf("Number = %d",testInteger);<br />
+                        return 0;<br />
+                        }<br />
+                </p>
+                <p id="code">
+
+                    Output:<br />
+                    Enter an integer: 4<br />
+                    Number = 4
+                </p>
+            </div>
+        </section>
+
+        <section id="C_Programming_Operators" class="main-section">
+            <header class="head">
+                C Programming Operators
+            </header>
+
+            <div>
+                <p>
+                    An operator is a symbol that operates on a value or a variable. For example: + is an operator to
+                    perform addition.
+
+                    C has a wide range of operators to perform various operations.
+                </p>
+                <h3>C Arithmetic Operators</h3>
+                <p>
+                    An arithmetic operator performs mathematical operations such as addition, subtraction,
+                    multiplication, division etc on numerical values (constants and variables).
+                </p>
+                <h3>C Increment and Decrement Operators</h3>
+                <p>
+                    C programming has two operators increment ++ and decrement -- to change the value of an operand
+                    (constant or variable) by 1.
+
+                    Increment ++ increases the value by 1 whereas decrement -- decreases the value by 1. These two
+                    operators are unary operators, meaning they only operate on a single operand.
+                </p>
+                <h3>C Assignment Operators</h3>
+                <p>
+
+                    An assignment operator is used for assigning a value to a variable. The most common assignment
+                    operator is =
+                </p>
+                <h3>C Relational Operators</h3>
+                <p>
+
+                    A relational operator checks the relationship between two operands. If the relation is true, it
+                    returns 1; if the relation is false, it returns value 0.
+
+                    Relational operators are used in decision making and loops.
+                </p>
+                <h3> C Logical Operators</h3>
+                <p>
+
+                    An expression containing logical operator returns either 0 or 1 depending upon whether expression
+                    results true or false. Logical operators are commonly used in decision making in C programming.
+                </p>
+                <h3>C Bitwise Operators</h3>
+                <p>
+
+                    During computation, mathematical operations like: addition, subtraction, multiplication, division,
+                    etc are converted to bit-level which makes processing faster and saves power.
+
+                    Bitwise operators are used in C programming to perform bit-level operations.
+                </p>
+            </div>
+        </section>
+
+        <section id="C_Arrays" class="main-section">
+            <header class="head">
+                C Arrays
+            </header>
+
+            <div>
+
+                <p>
+                    An array is a variable that can store multiple values. For example, if you want to store 100
+                    integers, you can create an array for it.
+                </p>
+                <p id="code">
+                    <code>
+                        int data[100];
+                    </code>
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>

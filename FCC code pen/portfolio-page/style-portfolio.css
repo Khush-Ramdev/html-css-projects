@@ -1,0 +1,199 @@
+
+body{
+    background-color:#262626;
+    color:white;
+    margin: 0px;
+}
+#navbar{
+    background-color:#e60000;
+    margin:0;
+    position: fixed;
+    top:0px;
+    width:100vw;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.nav_links{
+    font-size: 1rem;
+    text-align: center;
+}
+.nav_links  a {
+    text-decoration:none;
+    color: white;
+    padding: 1em 2em;
+    display: block;
+}
+.nav_links a:hover{
+    background-color: midnightblue;
+}
+#welcome-section{
+    background-color:#262626;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home{
+    text-align: center;
+    font-size: 4.5rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:10px;
+}
+#home_h1{
+    margin: 10px;
+}
+#home_h2{
+    font-size: 2rem;
+    color: maroon;
+    margin:10px;
+    font-style: italic;
+    font-weight: lighter;
+    font-family:monospace;
+}
+#projects{
+    background-color: #45567d;
+}
+#projecthead{
+    text-align: center;
+    font-size: 60px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    padding:25px;
+}
+.grid{
+    display:grid;
+    grid-template-columns: auto auto ;
+    /* grid-gap:2rem; */
+    
+    padding:2rem;
+    justify-content:space-around;   
+}
+.project-tile{
+    text-align: center;
+    margin: 10px;
+    border:5px white solid;
+}
+.project-image{
+    height:500px;
+    width:400px;  
+}
+.profile-text{
+    background-color:black;
+    margin:0px;
+    padding:5px;
+    font-size:20px;
+    text-transform: capitalize;
+}
+.project-link{
+    text-decoration: none;
+    color:white;
+}
+.contact_me_h1
+{
+    text-align: center;
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#contact_me{
+    background-color:#595959;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.contact_me{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#contact_info{
+    font-size:25px;
+    flex: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+}
+footer{
+    border-top:3px solid white;
+    text-align: right;
+    font-size: 20px;
+    padding:20px;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline;
+}
+@media (max-width:1100px)
+{
+    .grid{
+        grid-template-columns: auto;
+    }
+    .project-image{
+        height:500px;
+        width:400px; 
+    }
+}
+@media (max-width:650px)
+{
+    #home{
+        font-size: 40px;
+    }
+    #home_h2{
+        font-size: 25px;
+    }
+    .project-image{
+        height:400px;
+        width:300px; 
+    }
+    .contact_me{
+        flex-wrap: wrap;
+    }
+    #projecthead{
+        font-size:40px;
+    }
+}
+@media (max-width:550px)
+{
+    footer{
+        font-size:15px;
+    }
+}
+@media (max-width:400px)
+{
+    #home{
+        font-size:25px;
+    }
+    #projecthead{
+        font-size:25px;
+        margin: 5px;
+        padding:50px 5px 0px;
+    }
+    .project-tile{
+        width: 250px;
+    }
+    .project-image{
+        height:300px;
+        width:250px; 
+    }
+    .contact_me{
+        flex-wrap: wrap;
+    }
+    #contact_info{
+        min-width: 10rem;
+    }
+    #profile-link{
+        font-size: 20px;
+    }
+    .icon{
+        height:30px;
+        width:auto;
+    }
+    footer{
+        font-size:15px;
+        padding:5px;
+    }
+
+}
